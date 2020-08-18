@@ -1,10 +1,7 @@
 #!/bin/bash
 
 _yamlize_pass() {
-  ${GPG} -d "${GPG_OPTS[@]}" "${PASSFILEPATH}" |
-    tail -n +2 |
-    grep -Pv '^otpauth://' |
-    grep -P '^[^:]+:'
+  ${GPG} -d "${GPG_OPTS[@]}" "${PASSFILEPATH}" | sed -nE '1d; /^otpauth:\/\//d; /^[^:]+:/p'
 }
 
 _validate_yaml() {
