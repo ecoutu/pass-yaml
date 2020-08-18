@@ -17,6 +17,13 @@ yaml keys
 [
 .I yq-expression
 ]
+.br
+.B pass
+yaml values
+.I pass-name
+[
+.I yq-expression
+]
 
 .SH DESCRIPTION
 
@@ -35,11 +42,13 @@ files
 .SH COMMANDS
 .TP
 \fBpass yaml\fP \fIpass-name\fP \fIyq-expression\fP
-.br
-Show values specified by yq-expression in pass-name.
+Show yaml specified by yq-expression in pass-name.
 .TP
 \fBpass yaml keys\fP \fIpass-name\fP \fIyq-expression\fP
 Show keys specified by yq-expression in pass-name.
+.TP
+\fBpass yaml values\fP \fIpass-name\fP \fIyq-expression\fP
+Show values specified by yq-expression in pass-name.
 
 .SH SEE ALSO
 .BR pass (1)
