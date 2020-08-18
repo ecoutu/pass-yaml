@@ -26,7 +26,6 @@ cmd_yaml_read() {
 }
 
 CMD=cmd_yaml_read
-PASS_FILES=()
 YQ_ARGS=()
 
 case "${1}" in
