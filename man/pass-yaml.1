@@ -1,0 +1,63 @@
+.TH pass-yaml 1 "2020 August 18" "Version 1.0.0" "User Commands"
+
+.SH NAME
+pass-yaml - a password-store extension to manipulate yaml
+
+.SH SYNOPSIS
+.B pass
+yaml
+.I pass-name
+[
+.I yq-expression
+]
+.br
+.B pass
+yaml keys
+.I pass-name
+[
+.I yq-expression
+]
+
+.SH DESCRIPTION
+
+.BR pass(1)
+proposes a format to store meta data in the password file.
+.br
+The password is stored in the first line followed by data like the URL, username and other meta data in the following lines.
+.br
+.B pass-yaml
+is an extension for
+.BR pass(1)
+that allows users to display and edit password meta data stored as yaml in
+.BR pass(1)
+files
+
+.SH COMMANDS
+.TP
+\fBpass yaml\fP \fIpass-name\fP \fIyq-expression\fP
+.br
+Show values specified by yq-expression in pass-name.
+.TP
+\fBpass yaml keys\fP \fIpass-name\fP \fIyq-expression\fP
+Show keys specified by yq-expression in pass-name.
+
+.SH SEE ALSO
+.BR pass (1)
+
+.SH AUTHOR
+Emma Coutu
+
+
+.SH HOME
+.I https://github.com/ecoutu/pass-yaml
+
+
+.SH REPORTING BUGS
+.I https://github.com/ecoutu/pass-yaml/issues
+
+.SH LICENSE
+Copyright \(co 2020 Emma Coutu.
+.PP
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+.br
+This is free software: you are free to change and redistribute it. There is NO WARRANTY, to the extent permitted by law.

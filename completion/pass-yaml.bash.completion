@@ -1,0 +1,9 @@
+PASSWORD_STORE_EXTENSION_COMMANDS+=(yaml yamledit)
+
+__password_store_extension_complete_yaml() {
+    _pass_complete_entries 1
+}
+
+__password_store_extension_complete_yamledit() {
+    _pass_complete_entries 1
+}
