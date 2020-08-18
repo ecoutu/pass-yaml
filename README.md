@@ -11,9 +11,9 @@ A [pass] extension for interacting with yaml stored in pass files.
 ### Source Install
 
 ```shell script
-curl -LO https://github.com/ecoutu/pass-yaml/archive/v1.0.tar.gz
-tar xzvf v1.0.tar.gz
-cd pass-yaml-1.0
+curl -LO https://github.com/ecoutu/pass-yaml/archive/v1.1.tar.gz
+tar xzvf v1.1.tar.gz
+cd pass-yaml-1.1
 sudo make install
 ```
 
