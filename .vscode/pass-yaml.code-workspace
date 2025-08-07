@@ -5,6 +5,6 @@
 		}
 	],
 	"settings": {
-    "conventionalCommits.scopes": ["vscode"]
+    "conventionalCommits.scopes": ["vscode", "README.md"]
   }
 }
